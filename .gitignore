@@ -1,0 +1,9 @@
+*.class
+out/
+.idea/
+verify.ps1
+verify_tasks.ps1
+verify.bat
+verify_tasks.bat
+/bin/
+/obj/
