@@ -1,0 +1,25 @@
+=== SmartSpeaker ===
+Living Room Speaker: Connected to Wi-Fi network 'HomeNet_5G'.
+Living Room Speaker: Heard voice command -> "play some jazz"
+Living Room Speaker: Now playing "Take Five".
+
+=== SmartTV ===
+Bedroom TV: Connected to Wi-Fi network 'HomeNet_5G'.
+Bedroom TV: Voice remote command -> "open Netflix"
+Bedroom TV: Streaming "Stranger Things S5" in HD.
+
+=== SmartThermostat ===
+Hallway Thermostat: Connected to Wi-Fi network 'HomeNet_5G'.
+Hallway Thermostat: Current room temperature is 24.5 C.
+
+=== SmartHub ===
+Kitchen Hub: Connected to Wi-Fi network 'HomeNet_5G'.
+Kitchen Hub: Hub processing command -> "set a 10 minute timer"
+Kitchen Hub: Playing "Morning Playlist" through hub speaker.
+Kitchen Hub: Sensor reads 22.0 C.
+
+=== SmartCar (added without modifying any interface) ===
+Family SUV: In-car system connected to Wi-Fi hotspot 'MobileHotspot_Car'.
+Family SUV: Driver assistant heard -> "navigate home"
+Family SUV: Playing "Road Trip Mix" over the car speakers.
+Family SUV: Streaming "Cartoon Show for Kids" on rear-seat displays.

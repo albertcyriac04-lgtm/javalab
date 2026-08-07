@@ -1,0 +1,50 @@
+-------------------------------------------
+Record 1
+-------------------------------------------
+Student Name : Albert Cyriac
+Student ID   : UG101
+Course       : BSc Mathematics
+Total Marks  : 417
+Percentage   : 83.40%
+Grade        : A+
+-------------------------------------------
+Record 2
+-------------------------------------------
+Student Name : Anjali Menon
+Student ID   : UG102
+Course       : BSc Computer Science
+Total Marks  : 210
+Percentage   : 42.00%
+Grade        : F
+-------------------------------------------
+Record 3
+-------------------------------------------
+Student Name : Rahul Nair
+Student ID   : PG201
+Course       : MCA - AI/ML
+Weighted Score (60% Internal + 40% Project) : 88
+Grade        : O (Outstanding)
+-------------------------------------------
+Record 4
+-------------------------------------------
+Student Name : Sneha Thomas
+Student ID   : PG202
+Course       : MSc Data Science
+Weighted Score (60% Internal + 40% Project) : 55
+Grade        : B
+-------------------------------------------
+Record 5
+-------------------------------------------
+Student Name : Vishnu Prasad
+Student ID   : CT301
+Course       : Certificate in Cloud Computing
+Qualifying Exam Mark : 72
+Result       : PASS
+-------------------------------------------
+New course type added without modifying abstract class:
+-------------------------------------------
+Student Name : Fathima Zahra
+Student ID   : DP401
+Course       : Diploma in Web Development
+Final Score (avg + 5% practical bonus) : 71
+Grade        : PASS with Distinction Track

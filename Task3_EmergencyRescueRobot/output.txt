@@ -1,0 +1,27 @@
+===== Fleet Roll Call =====
+SkyHawk [AR-01] reporting for duty.
+SkyHawk [AR-01] Battery: 90% (OK)
+DeepDiver [AQ-01] reporting for duty.
+DeepDiver [AQ-01] Battery: 75% (OK)
+RockClimber [MT-01] reporting for duty.
+RockClimber [MT-01] Battery: 60% (OK)
+FloodRunner [AM-01] reporting for duty.
+FloodRunner [AM-01] Battery: 85% (OK)
+
+===== Mission Deployment =====
+SkyHawk: Mission -> Aerial search for survivors over flood zone.
+SkyHawk: Ascending to 80m for aerial scan.
+
+DeepDiver: Mission -> Underwater search near collapsed bridge.
+DeepDiver: Diving to 15m to search underwater.
+
+RockClimber: Mission -> Reach trapped hikers on a rocky ridge.
+RockClimber: Climbing over rocky/rubble terrain.
+
+FloodRunner: Mission -> Cross flooded street then climb debris to reach survivors.
+FloodRunner: Wading/swimming through 3m of floodwater.
+FloodRunner: Climbing onto collapsed debris after leaving the water.
+
+===== Flood Drill: Swim-Capable Units Only =====
+DeepDiver: Diving to 5m to search underwater.
+FloodRunner: Wading/swimming through 5m of floodwater.
