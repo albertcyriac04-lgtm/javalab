@@ -1,66 +1,87 @@
-class Base {
-    private int value;
+class Employee{
+    private String name;
+    private int id;
+    private double baseSalary;
 
-    public Base(int value) {
-        this.value = value;
+    public Employee(String name, int id, double baseSalary) {
+        this.name = name;
+        this.id = id;
+        this.baseSalary = baseSalary;
+    }
+    public String getName() {
+        return name;
     }
 
-    public int getValue() {
-        return this.value;
+    public int getId() {
+        return id;
     }
 
-    public void setValue(int value) {
-        if (value < 0) {
-            this.value = 0;
-        } else {
-            this.value = value;
-        }
+    public double getBaseSalary() {
+        return baseSalary;
     }
-
-    protected void show() {
-        System.out.println(this.value);
-    }
-
-    public void print() {
-        System.out.println(this.value);
+    public double calculateSalary(){
+        return this.baseSalary;
     }
 }
-
-class Derived extends Base {
-    private String subclassFeature;
-
-    public Derived(int value, String subclassFeature) {
-        super(value);
-        this.subclassFeature = subclassFeature;
+class Manager extends Employee{
+    private double bonus;
+    public Manager(String name, int id, double baseSalary, double bonus) {
+        super(name, id, baseSalary);
+        this.bonus = bonus;
     }
-
-    public String getSubclassFeature() {
-        return this.subclassFeature;
-    }
-
-    public void setSubclassFeature(String subclassFeature) {
-        if (subclassFeature == null || subclassFeature.trim().isEmpty()) {
-            this.subclassFeature = "Default";
-        } else {
-            this.subclassFeature = subclassFeature;
-        }
-    }
-
-    public void displayExtendedFeatures() {
-        show();
-        print();
-        System.out.println(this.subclassFeature);
-        System.out.println(getValue());
+    public double calculateSalary() {
+        return getBaseSalary()+bonus;
     }
 }
+class Developer extends Employee {
+    private double projectAllowance;
 
+    public Developer(String name, int id, double baseSalary, double projectAllowance) {
+        super(name, id, baseSalary);
+        this.projectAllowance = projectAllowance;
+
+    }
+
+    public double calculateSalary() {
+        return getBaseSalary() + projectAllowance;
+    }
+}
+class Intern extends  Employee{
+        private double stipend;
+        public Intern(String name, int id, double stipend) {
+            super(name, id, 0);
+            this.stipend = stipend;
+
+        }
+
+    @Override
+    public double calculateSalary() {
+        return stipend;
+    }
+}
 public class Main {
     public static void main(String[] args) {
-        Derived obj = new Derived(101, "Advanced MCA Analytics Engines");
-        obj.displayExtendedFeatures();
+        System.out.println("--- Inserting Employee Records ---");
 
-        obj.setValue(505);
-        obj.setSubclassFeature("Cloud Infrastructure Engine");
-        obj.displayExtendedFeatures();
+        // Inserting data by creating object instances
+        Manager mgr = new Manager("Alice Smith", 101, 80000, 15000);
+        Developer dev = new Developer("Bob Jones", 102, 60000, 8000);
+        Intern intern = new Intern("Charlie Brown", 103, 2500);
+
+        System.out.println("Data insertion successful!\n");
+
+        System.out.println("--- Processing and Printing Details ---");
+
+        // Polymorphic array processing
+        Employee[] employees = { mgr, dev, intern };
+
+        for (Employee emp : employees) {
+            System.out.println("ID: " + emp.getId());
+            System.out.println("Name: " + emp.getName());
+            System.out.println("Calculated Salary: $" + emp.calculateSalary());
+            System.out.println("-----------------------------------");
+        }
+
+        System.out.println("Execution completed successfully.");
     }
 }
